@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>staff</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+.quote {
+  color: #03a3df;
+  background-color: white;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #1b447f;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/*style the navigation menu*/
+.nav {
+  grid-area: nav;
+  background-color: #ecb722;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+}
+.nav a {
+  text-decoration: none;
+  color: #444444;
+}
+.nav a:hover {
+  background-color: #1b447f;
+  color: #03a3df;
+}
+.nav a.active {
+  background-color: #1b447f;
+  color: #ecb722;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'nav nav nav nav nav nav'
+    'main1 main1 main2 main2 main3 main4'
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+.main1 {
+  grid-area: main1;
+}
+
+.main2 {
+  grid-area: main2;
+}
+
+.main3 {
+  grid-area: main3;
+}
+
+.main4 {
+  grid-area: main4;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: white;
+  padding: 10px;
+  z-index: -1;
+}
+
+.footer-text {
+  grid-area: footer;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  text-align: center;
+  padding: 10%;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="header">
+    <img src="images/archery-academy-logo-color.png" alt="">
+  </div>
+
+  <div class="nav">
+  <a class="active" href="index.html">Home</a>
+  <a href="staff.html">Our Staff</a>
+  </div>
+  <div class="main1">
+    <img src="images/instructor-bio-image1.png" alt="a happy archery instructor"><br>Derek Jenkins<br>
+    <br>Level 3 Coach
+    <br>Recurve<br>
+    <br>"My biggest goal is to see archery grow and help its practicioners grow with it"<br>You can check derek out here!
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rzj4FFi7wt8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="main2">
+    <img src="images/instructor-bio-image2.png" alt="a happy archery instructor"><br>Derek Jenkins<br>
+    <br>Level 3 Coach
+    <br>Recurve<br>
+    <br>"My biggest goal is to see archery grow and help its practicioners grow with it"
+  </div>
+  <div class="main3">
+    <img src="images/instructor-bio-image3.png" alt="a happy archery instructor"><br>Derek Jenkins<br>
+    <br>Level 3 Coach
+    <br>Recurve<br>
+    <br>"My biggest goal is to see archery grow and help its practicioners grow with it"
+  </div>
+  <div class="main4">
+    <img src="images/instructor-bio-image4.png" alt="a happy archery instructor"><br>Derek Jenkins<br>
+    <br>Level 3 Coach
+    <br>Recurve<br>
+    <br>"My biggest goal is to see archery grow and help its practicioners grow with it"
+  </div>
+  <div class="footer">
+  <img src="images/footer-image.jpg" alt="a close up of arrow fletchings" width="100%">
+  </div>
+    <div class="footer-text">Next Step Archery admits students of any race, gender presentation, sexuality, religion, national origin or ethnic origin to all rights, privileges, programs and activities available to students at the school. We do not discriminate in administration of our educational policies, admission policies and other school administered programs. All students are welcome and valuable members of our community.</div>
+    <div class="footer-text"><ul>
+      <br>
+      <br>
+      <br>
+      <li>link 1</li>
+      <li>link 2</li>
+      <li>link 3</li>
+    </ul>
+    </div>
+</div>
+
+</body>
+</html>
